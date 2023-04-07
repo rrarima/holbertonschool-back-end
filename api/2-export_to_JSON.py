@@ -11,7 +11,7 @@ if __name__ == "__main__":
     todos = requests.get(url + "/todos", params={"userId": user_id}).json()
 
     user_todos = [{"task": todo["title"], "completed": todo["completed"],
-                "username": user["username"]} for todo in todos]
+                   "username": user["username"]} for todo in todos]
 
     output_data = {user_id: user_todos}
 
