@@ -16,4 +16,3 @@ if __name__ == "__main__":
             user.get("name"), completed_tasks, total_tasks))
 
     [print(f"\t {todo['title']}") for todo in todos if todo["completed"]]
-
